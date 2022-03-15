@@ -1,0 +1,46 @@
+<html>
+    <title>Forms</title>
+    
+    <head>
+        
+        <script>
+            if (answer=)
+            {onclick="checkboxes"}
+            else { window.alert("Answers are Required)}
+        </script>
+        
+        <script>
+         function checkboxes()
+         {
+             var name = document.getElementById("txtFName").value;
+             var lastname = document.getElementById("txtLName").value;
+             var email = document.getElementById("txtEmail").value;
+    
+             window.alert("Name: " + name + lastname + " Email: " + email);
+         }
+    </script>
+             <body>
+     <h3>Contact Us!</h3>
+     <table>
+         <tr>
+             <td>First Name</td>
+             <td><input type="text" id="txtFName"></td>
+         </tr>
+         <tr>
+             <td>Last Name</td>
+             <td><input type="text" id="txtLName"></td>
+         </tr>
+         <tr>
+             <td>Email Address</td>
+             <td><input type="text" id="txtEmail"></td>
+         </tr>
+         <tr>
+             <td colspan="2"><button id="btnSubmit" onClick="checkboxes();">Submit</button></td>
+         </tr>
+     </table>
+    </body>
+     </head>
+    
+ 
+
+</html>
